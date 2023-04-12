@@ -42,9 +42,13 @@
 -- 1. Domain model - 6 points
 -- - Think about how the domain model needs to reflect the
 --   "real world" entities and the relationships with each other. 
---   Hint: It's not just a single table that contains everything in the 
+--   Hint #1: It's not just a single table that contains everything in the 
 --   expected output. There are multiple real world entities and
 --   relationships including at least one many-to-many relationship.
+--   Hint #2: Do NOT name one of your models/tables “cast” or “casts”; this 
+--   is a reserved word in sqlite and will break your database! Instead, 
+--   think of a better word to describe this concept; i.e. the relationship 
+--   between an actor and the movie in which they play a part.
 -- 2. Execution of the domain model (CREATE TABLE) - 4 points
 -- - Follow best practices for table and column names
 -- - Use correct data column types (i.e. TEXT/INTEGER)
